@@ -1,0 +1,32 @@
+DROP TABLE IF EXISTS TBL_USERS;
+
+CREATE TABLE TBL_USERS (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(250) NOT NULL,
+    password VARCHAR(250) NOT NULL,
+    actor_type VARCHAR(250) NOT NULL
+);
+
+DROP TABLE IF EXISTS TBL_JOBS;
+
+CREATE TABLE TBL_JOBS (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    description TEXT,
+    requirements TEXT,
+    name VARCHAR(250),
+    contact VARCHAR(250),
+    lowest_bid REAL,
+    number_of_bids INT,
+    expiration_time TIMESTAMP,
+    created TIMESTAMP
+);
+
+DROP TABLE IF EXISTS TBL_BIDS;
+
+CREATE TABLE TBL_BIDS (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT NOT NULL,
+    job_id BIGINT NOT NULL,
+    bid_amount REAL NOT NULL
+);
