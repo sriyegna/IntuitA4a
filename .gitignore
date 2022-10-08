@@ -1,0 +1,53 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+## frontend
+
+# dependencies
+/frontenddemo/node_modules
+/frontenddemo/.pnp
+/frontenddemo/.pnp.js
+
+# testing
+/frontenddemo/coverage
+
+# production
+/frontenddemo/build
+
+# misc
+frontenddemo/.DS_Store
+frontenddemo/.env.local
+frontenddemo/.env.development.local
+frontenddemo/.env.test.local
+frontenddemo/.env.production.local
+
+frontenddemo/npm-debug.log*
+frontenddemo/yarn-debug.log*
+frontenddemo/yarn-error.log*
+
+## backend
+
+backendDemo/HELP.md
+backendDemo/target/
+backendDemo/!.mvn/wrapper/maven-wrapper.jar
+backendDemo/!**/src/main/**/target/
+backendDemo/!**/src/test/**/target/
+
+### STS ###
+backendDemo/.apt_generated
+backendDemo/.classpath
+backendDemo/.factorypath
+backendDemo/.project
+backendDemo/.settings
+backendDemo/.springBeans
+backendDemo/.sts4-cache
+
+### IntelliJ IDEA ###
+backendDemo/.idea
+backendDemo/*.iws
+backendDemo/*.iml
+backendDemo/*.ipr
+
+### VS Code ###
+backendDemo/.vscode/
+
+backendDemo/*.log

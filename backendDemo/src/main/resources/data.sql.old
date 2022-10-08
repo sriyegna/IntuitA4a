@@ -1,0 +1,14 @@
+INSERT INTO TBL_USERS (id, name, password, actor_type) VALUES
+    (0, 'bidder', '123', 'bidder'),
+    (1, 'poster', '123', 'poster')
+;
+
+INSERT INTO TBL_JOBS (id, contact, description, expiration_time, name, requirements, user_id, lowest_bid, number_of_bids, created, closed) VALUES
+    (0, 'contact', '1', '2022-10-30T20:32', 'Name0', 'requirements', 0, 0.0, 0, '2022-10-01T20:32', false),
+    (1, 'contact', '1', '2022-10-05T20:32', 'Name1', 'requirements', 0, 0.0, 0, '2022-10-01T20:32', true)
+;
+
+INSERT INTO TBL_BIDS (id, user_id, job_id, bid_amount, created) VALUES
+    (0, 0, '123', 100, '2022-10-01T20:32'),
+    (1, 0, '123', 40, '2022-10-01T20:32')
+;
